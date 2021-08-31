@@ -19,8 +19,10 @@ public class QueueMain {
 		
 		System.out.println("Size of the Queue is: "+queueList.size());
 		System.out.println("Queue after repeated dequeue : ");
-		queueList.dequeue();
-		queueList.printQueue();
+		while(!queueList.isEmpty()) {
+			queueList.dequeue();
+			queueList.printQueue();
+		}
 
 	}
 
