@@ -16,6 +16,26 @@ public class Queue<K> {
 	}
 	
 	
+	public INode dequeue() {
+		return queueLinkedList.deleteFirst();
+	}
+	
+	
+	public boolean isEmpty() {
+		if(queueLinkedList.head != null) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+	
+	
+	public int size() {
+		return queueLinkedList.size();
+	}
+	
+	
 	public void printQueue() {
 		queueLinkedList.printLinkedList();
 	}
