@@ -21,8 +21,8 @@ public class StackMain {
 		System.out.println("Stack after repeated popping : ");
 		while(!stackList.isEmpty()) {
 			stackList.pop();
+			stackList.printStack();
 		}
-		stackList.printStack();
 
 	}
 
