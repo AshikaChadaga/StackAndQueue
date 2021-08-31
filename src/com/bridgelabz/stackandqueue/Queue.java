@@ -16,11 +16,6 @@ public class Queue<K> {
 	}
 	
 	
-	public INode dequeue() {
-		return queueLinkedList.deleteLastNode();
-	}
-	
-	
 	public void printQueue() {
 		queueLinkedList.printLinkedList();
 	}
